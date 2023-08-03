@@ -5,6 +5,10 @@
     font-family: Roboto,Helvetica,sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Nav Bar Styling */
 
 .navbar {
@@ -188,9 +192,13 @@
         height: 50px;
 }
 
-.loc-icon {
+.loc-icon, .loc-icon-responsive {
     height: 23px;
     width: 25px;
+}
+
+.loc-icon-responsive {
+    display: none;
 }
 
 .loc-txt {
@@ -207,7 +215,7 @@
     color: grey;
 }
 
-.search-div {
+.search-div, .search-div-responsive {
     display: flex;
     align-items: center;
 
@@ -216,6 +224,11 @@
 
     border: 2px solid #002f34;
     border-radius: 4px;
+}
+
+.search-div-responsive {
+    width: 100%;
+    display: none;
 }
 
 .search-input {
@@ -239,7 +252,8 @@
     align-items: center;
 
     height: 100%;
-    width: 40px;
+    width: 6%;
+    min-width: 40px;
 
     background-color: #002f34;
 }
@@ -258,7 +272,7 @@
 
 }
 
-.set-btn-div {
+.sell-btn-div {
     position: relative;
 
     cursor: pointer;
@@ -315,12 +329,14 @@
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 100%px;
     height: 210px;
+
+    overflow-x: auto;
 }
 
 .ad-banner-img {
-    width: 96%;
+    width: 1200px;
     height: 170px;
 
     border-radius: 4px;
@@ -362,11 +378,14 @@
 
 .category-section {
     width: 100%;
-    height: 305px;
+    height: 310px;
+
     overflow-x: auto;
+    
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .category-item {
@@ -423,4 +442,87 @@
     font-size: 11px;
 
     color: rgba(0, 0, 0, 0.685);    
+}
+
+@media (max-width: 925px) {
+    .all-cat-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .navbar {
+        padding: 11px 8px;
+    }
+
+    .nav-child-1 {
+        justify-content: space-between;
+    }
+
+    .olx-logo-black {
+        display: none;
+    }
+
+    .sell-btn-div, .login-btn {
+        display: none;
+    }
+
+    .nav-child-2 {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+    }
+
+    .search-div {
+        display: none;
+    }
+
+    .search-div-responsive {
+        display: block;
+        display: flex;
+        background-color: #fff;
+    }
+
+    .nav-dropdown-main {
+        border: none;
+        background-color: #f7f8f8;
+        margin: 0;
+    }
+
+    .dropdown-input {
+        background-color: #f7f8f8;
+        width: 80px;
+    }
+
+    .loc-icon-responsive {
+        display: block;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .search-icon-white {
+        width: 22px;
+    }
+
+    .search-icon-area {
+        background-color: #fff;
+        min-width: 30px;
+        width: 5%;
+    }
+
+    .category-container {
+        display: none;
+    }
+
+    
+    .ad-banner-img {
+        width: 800px;
+        height: auto;
+    }
+
+    .ad-banner {
+        height: 130px;
+    }
 }

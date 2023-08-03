@@ -362,13 +362,19 @@
 
 .category-section {
     width: 100%;
-
+    height: 305px;
+    overflow-x: auto;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
 }
 
 .category-item {
-    width: 22%;
+    justify-content: space-around;
+
+    margin-left: 15px;
+
+    min-width: 280px;
     height: 300px;
 
     box-shadow: 0 0 1px 0;

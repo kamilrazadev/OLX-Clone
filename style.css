@@ -387,16 +387,15 @@
     
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
     align-items: center;
 }
 
 .category-item {
-    justify-content: space-around;
-
     margin-left: 15px;
 
-    min-width: 280px;
+    min-width: 200px;
+    width: 300px;
+
     height: 300px;
 
     box-shadow: 0 0 1px 0;
@@ -448,6 +447,9 @@
 }
 
 .download-info {
+    display: flex;
+    align-items: center;
+
     margin-top: 50px;
 }
 
@@ -533,7 +535,6 @@
     .category-container {
         display: none;
     }
-
     
     .ad-banner-img {
         width: 800px;
@@ -542,5 +543,17 @@
 
     .ad-banner {
         height: 130px;
+    }
+
+    .category-item {
+        min-width: 200px;
+        /* width: 200px; */
+    }
+}
+
+@media (min-width: 1075px) {
+    
+    .category-section {
+        justify-content: space-around;
     }
 }

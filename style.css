@@ -597,8 +597,8 @@
 
     .sell-btn-div {
         position: fixed;
-        top: 90%;
-        left: 43%;
+        bottom: 20px;
+        left: 40%;
         transform: scale(.8);
     }
 
@@ -683,6 +683,11 @@
 
     .download-info {
         display: none;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 2px;
     }
 }
 

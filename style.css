@@ -9,6 +9,10 @@
     display: none;
 }
 
+.uniform-color {
+    color: #002f34;
+}
+
 /* Nav Bar Styling */
 
 .navbar {
@@ -366,7 +370,7 @@
     margin-bottom: 10px;
 }
 
-.cat-img-txt, .app-download-txt {
+.cat-img-txt {
     font-size: 14.5px;
     font-weight: bold;
 }
@@ -447,17 +451,129 @@
 }
 
 .download-info {
+    width: 100%;
+    height: 200px;
+
     display: flex;
-    align-items: center;
 
     margin-top: 50px;
+
+    background-color: #f7f8f8;
+}
+
+.download-info > div {
+    width: 33%;
+    height: 70%;
+}
+
+.download-info > div:nth-child(2) {
+    padding: 30px 35px;
+}
+
+.download-info > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-self: center;
+
+    padding: 10px 30px;
+
+    border-left: 2px solid rgb(163, 163, 163);
 }
 
 .app-store-btn {
-    width: 130px;
+    width: 120px;
 }
 
-@media (max-width: 925px) {
+.footer-sub-heading {
+    font-size: 12.5px;
+    font-weight: bold;
+}
+
+.download-btn-div {
+    margin-top: 20px;
+}
+
+.about-olx-text {
+    font-size: 19px;
+
+    margin-top: 18px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    
+    border-top: 1px solid grey;
+
+    background-color: #ebeeef;
+
+    padding-bottom: 40px;
+}
+
+.footer-links div:nth-child(5) {
+    margin-left: 80px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links  h5 {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    font-size: 12px;
+
+    text-decoration: none;
+
+    color: rgba(0,47,52,.64);
+}
+
+.social-media-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+}
+
+.social-media-footer i {
+    font-size: 20px;
+
+    color: #002f34b6;
+}
+
+.fa-play{
+    font-size: 15px !important;
+}
+
+.download-btn-div-footer {
+    margin-top: 35px;
+}
+
+.download-btn-div-footer > img {
+    width: 80px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    background-color: #002f34;
+    color: white;
+
+    font-size: 13px;
+}
+
+@media (max-width: 950px) {
     .all-cat-container {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -547,7 +663,26 @@
 
     .category-item {
         min-width: 200px;
-        /* width: 200px; */
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .footer-links > div:nth-child(5) {
+        margin-left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download-info {
+        display: none;
     }
 }
 
@@ -555,5 +690,15 @@
     
     .category-section {
         justify-content: space-around;
+    }
+}
+@media (max-width: 1150px) {
+    
+    .download-info > div:nth-child(2) {
+        display: none;
+    }
+
+    .download-info > div {
+        width: 50%;
     }
 }

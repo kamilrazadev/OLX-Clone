@@ -451,8 +451,24 @@ section {
     font-size: 14px;
 }
 
+.category-top-section {
+    display: flex;
+
+    width: 100%;
+}
+
+.category-top-section-1 {
+    width: 24%;
+}
+
+.category-top-section-2 {
+    
+}
+
 .section-heading {
     padding: 20px 0;
+
+    letter-spacing: -1px;
 }
 
 .filter-section {
@@ -661,6 +677,8 @@ section {
 
 .ads-section {
     width: 100%;
+
+    margin-top: 20px;
 }
 
 .category-item {

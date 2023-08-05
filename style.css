@@ -696,7 +696,7 @@
     }
 
     .link {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .link-arrow {
@@ -706,6 +706,15 @@
     .category-item {
         min-width: 200px;
     }
+
+    .category-img {
+        width: 40px;
+    }
+
+    .cat-img-txt {
+        font-size: 12px;
+    }
+
 
     .footer-links {
         flex-direction: column;

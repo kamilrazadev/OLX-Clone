@@ -125,6 +125,8 @@
 }
 
 .arrow-icon {
+    /* z-index: -1 !important; */
+
     height: .8rem;
 
     cursor: pointer;
@@ -343,203 +345,60 @@
     color: #00a49f;
 }
 
-.ad-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sub-txt {
+    color: rgba(0, 47, 52, .64);
 
-    width: 100%px;
-    height: 210px;
+    font-size: 14px;
 
-    overflow-x: auto;
+    margin: 20px 30px;
 }
 
-.ad-banner-img {
-    width: 1200px;
-    height: 170px;
-
-    border-radius: 4px;
-}
-
-.all-cat-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cat-img-item {
-    text-align: center;
-
-    width: 100px;
-
-    line-height: 17px;
-
-    margin: 8px 15px;
-}
-
-.category-img {
-    width: 80px;
-
-    margin-bottom: 10px;
-}
-
-.cat-img-txt {
-    text-decoration: none;
-
-    color: #002f34;
-
-    font-size: 14.5px;
-    font-weight: bold;
-}
-
-.category-sect-top {
+.ad-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    padding: 35px 20px 20px 20px;
-}
-
-.category-heading {
-    font-size: 20px;
-
-    color: #002f34;
-}
-
-.all-category-heading {
-    font-size: 20px;
-
-    color: #002f34;
-    
-    margin: 35px 20px 20px 20px;
-}
-
-.link {
-    text-decoration: none;
-
-    color: #3a77ff;
-}
-
-.link-arrow {
-    width: 15px;
-
-    cursor: pointer;
-}
-
-.category-section {
-    width: 100%;
-    height: 310px;
-
-    overflow-x: auto;
-    
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.link-to-single-ad {
-    text-decoration: none;
-}
-
-.category-item {
-    margin-left: 15px;
-
-    min-width: 200px;
-    width: 300px;
-
-    height: 300px;
-
-    box-shadow: 0 0 1px 0;
-    
-    border-radius: 3px;
-}
-
-.cat-sec-img {
-    height: 50%;
-    width: 100%;
-
-    background-position: center;
-    background-size: cover;
-
-    border-radius: 3px 3px 0 0;
-}
-
-.cat-sec-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    width: 100%;
-    height: 50%;
-
-    padding: 10px;
-}
-
-.item-price {
-    color: #002f34;
-}
-
-.item-name {
-    font-size: 15px;
-
-    color: #002f34;
-}
-
-.item-loc {
-    font-size: 13px;
-
-    color: rgba(0, 0, 0, 0.685);
-}
-
-.upload-date {
-    font-size: 11px;
-
-    color: rgba(0, 0, 0, 0.685);    
-}
-
-.download-info {
-    width: 100%;
-    height: 200px;
-
-    display: flex;
-
-    margin-top: 50px;
-
-    background-color: #f7f8f8;
-}
-
-.download-info > div {
-    width: 33%;
-    height: 70%;
-}
-
-.download-info > div:nth-child(2) {
-    padding: 30px 35px;
-}
-
-.download-info > div:nth-child(3) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    align-self: center;
 
     padding: 10px 30px;
 
-    border-left: 2px solid rgb(163, 163, 163);
+    width: 100%;
 }
 
-.app-store-btn {
-    width: 120px;
+.ad-details {
+    width: 65%;
 }
 
-.footer-sub-heading {
-    font-size: 12.5px;
-    font-weight: bold;
+.ad-img {
+    z-index: -1;
+
+    position: relative;
+
+    width: 100%;
+    height: 470px;
+
+    border-radius: 3px;
+
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.download-btn-div {
-    margin-top: 20px;
+.camera-icon {
+    width: 70px;
+
+    position: absolute;
+    top: 92.5%;
+    left: 91%;
+
+    background-color: #fff;
+
+    padding: 5px 10px;
+
+    border-radius: 13px;
 }
+
+.seller-details {
+    width: 28%;
+}
+
 
 .about-olx-text {
     font-size: 19px;
@@ -618,6 +477,7 @@
 
     font-size: 13px;
 }
+
 
 @media (max-width: 950px) {
     .all-cat-container {
@@ -751,22 +611,5 @@
     .footer {
         font-size: 12px;
         padding: 10px;
-    }
-}
-
-@media (min-width: 1075px) {
-    
-    .category-section {
-        justify-content: space-around;
-    }
-}
-@media (max-width: 1150px) {
-    
-    .download-info > div:nth-child(2) {
-        display: none;
-    }
-
-    .download-info > div {
-        width: 50%;
     }
 }

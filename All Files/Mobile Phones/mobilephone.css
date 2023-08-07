@@ -21,6 +21,10 @@
     color: black;
 }
 
+.d-flex {
+    display: flex;
+}
+
 /* Nav Bar Styling */
 
 .navbar {
@@ -453,16 +457,77 @@ section {
 
 .category-top-section {
     display: flex;
+    justify-content: space-between;
 
     width: 100%;
 }
 
 .category-top-section-1 {
-    width: 24%;
+    width: 23%;
+}
+
+.filter-txt {
+    border-bottom: 1px solid rgba(0, 47, 52, 0.42);
+
+    padding-bottom: 20px;
 }
 
 .category-top-section-2 {
-    
+    width: 76%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    border-bottom: 1px solid rgba(0, 47, 52, 0.42);
+
+    padding-bottom: 3px;
+}
+
+.numb-of-ads {
+    font-size: 14px;
+
+    border-radius: 4px;
+
+    padding: 5px;
+    margin-bottom: 20px;
+
+    background-color: #c8f8f6;
+    color: #002f34;
+}
+
+.top-sec-2-sub {
+    font-size: 14px;
+
+    padding: 5px 7px;
+
+    color: #002f34;
+}
+
+.view-type-container {
+    border-left: 1px solid rgba(0, 47, 52, 0.42);
+    border-right: 1px solid rgba(0, 47, 52, 0.42);
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 10px;
+}
+
+
+
+.view-type-container > h4{
+    color: #002f34;
+}
+
+.list-view-icon {
+    background-color: #c8f8f6;
+
+    padding: 6px;
+
+    border-radius: 50%;
 }
 
 .section-heading {
@@ -471,18 +536,64 @@ section {
     letter-spacing: -1px;
 }
 
+.sort-by-container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 0 8px;
+
+    color: #002f34;
+}
+
+.sort-by-container  p {
+    font-size: 14px;
+}
+
+.arrow-icon-sort {
+    width: 15px;
+
+    cursor: pointer;
+
+    transition: 300ms;
+}
+
+.arrow-icon-sort:hover {
+    transform: rotate(180deg);
+}
+
+.sort-dropdown {
+    display: none;
+
+    position: absolute;
+
+    text-align: center;
+
+    width: 100%;
+
+    top: 100%;
+
+    background-color: white;
+
+    box-shadow: 0 0 0.7px 0;
+
+}
+
+.sort-dropdown > p {
+    padding: 15px 0;
+}
+
+.arrow-icon-sort:hover ~ .sort-dropdown {
+    display: block;
+}
+
 .filter-section {
-    border-top: 1px solid rgba(0, 47, 52, 0.42);
+    border-bottom: 1px solid rgba(0, 47, 52, 0.42);
 
     padding: 20px;
-}
-
-.first-filter {
-    margin-top: 20px;
-}
-
-.last-filter {
-    border-bottom: 1px solid rgba(0, 47, 52, 0.42);
 }
 
 .text-indent-main {

@@ -1,4 +1,4 @@
-* {
+    * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -490,7 +490,6 @@ section {
     border-radius: 4px;
 
     padding: 5px;
-    margin-bottom: 20px;
 
     background-color: #c8f8f6;
     color: #002f34;
@@ -596,6 +595,28 @@ section {
     padding: 20px;
 }
 
+.filter-btn-container {
+    display: none;
+}
+
+.filter-btn {
+    width: 105px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+
+    background-color: #002f34;
+    color: white;
+
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
 .text-indent-main {
     text-indent: 15px;
 }
@@ -696,8 +717,6 @@ section {
     padding: 20px;
 }
 
-
-/* This css is for normalizing styles. You can skip this. */
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -788,25 +807,24 @@ section {
 
 .ads-section {
     width: 100%;
-
-    margin-top: 20px;
 }
 
-.category-item {
+.ad-item {
     display: flex;
 
+    margin: 10px 0;
     margin-left: 10px;
 
     width: 100%;
     height: 210px;
 
-    box-shadow: 0 0 1px 0;
+    box-shadow: 0 0 2px 0;
     
     border-radius: 3px;
 
 }
 
-.cat-sec-img {
+.ad-sec-img {
     height: 100%;
     width: 30%;
 
@@ -816,7 +834,7 @@ section {
     border-radius: 3px 0 0 3px;
 }
 
-.cat-sec-description {
+.ad-sec-description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -865,12 +883,89 @@ section {
     margin: 15px;
 }
 
-@media (max-width: 950px) {
-    .all-cat-container {
-        flex-wrap: nowrap;
-        overflow-x: auto;
+.ads-btn {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.chat-btn, .call-btn {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+
+    gap: 5px;
+
+    width: 100px;
+    height: 40px;
+
+    outline: none;
+
+    border: 2px solid #002f34;
+    border-radius: 5px;
+}
+
+.chat-btn {
+    background-color: #002f34;
+    color: white;
+}
+
+.call-btn {
+    background-color: #fff;
+}
+
+.chat-btn > img, .call-btn > img{
+    width: 22px;
+}
+
+@media (max-width: 1075px) {
+    .category-container {
+        display: none;
     }
 
+    section {
+        padding: 20px 10px;
+    }
+
+    .category-top-section-1 {
+        display: none;
+    }
+
+    .category-top-section-2 {
+        width: 100%;
+
+        padding-bottom: 10px;
+    }
+
+    .top-filters {
+        display: none;
+    }
+
+    .filter-btn-container {
+        display: block;
+    }
+
+    .filter-container {
+        display: none;
+    }
+
+    .ad-item {
+        margin-left: 0;
+    }
+
+    .fa-heart {
+        margin: 10px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 950px) {
     .navbar {
         padding: 11px 8px;
     }
@@ -912,14 +1007,7 @@ section {
     }
 
     .nav-dropdown-main {
-        border: none;
-        background-color: #f7f8f8;
-        margin: 0;
-    }
-
-    .dropdown-input {
-        background-color: #f7f8f8;
-        width: 80px;
+        display: none;
     }
 
     .loc-icon-responsive {
@@ -964,4 +1052,45 @@ section {
         font-size: 12px;
         padding: 10px;
     }
+}
+
+@media (max-width: 770px) {
+    .ad-item {
+        height: 150px;
+    }
+
+    .ad-sec-img {
+        width: 40%;
+    }
+
+    .ad-sec-description {
+        width: 60%;
+
+        padding: 10px;
+    }
+
+    .item-price, .item-name {
+        font-size: 15px;
+    }
+
+    .item-loc {
+        font-size: 12px;
+    }
+
+    .upload-date {
+        font-size: 13.5px;
+    }
+    
+    .ads-btn {
+        display: none;
+    }
+
+    .ad-sec-description > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        height: 50%;
+    }
+    
 }

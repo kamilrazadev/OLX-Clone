@@ -12,6 +12,7 @@
     <title>OLX -  Buy and Sell for free anywhere</title>
 </head>
 <body>
+
     <!-- Nav Bar -->
     <div class="navbar">
         <!-- Nav Bar Upper first Part -->
@@ -96,19 +97,20 @@
                 <input type="text" placeholder="All ads in Pakistan" class="search-input">
             </div>
             <!-- Login Button -->
-            <div>
-                <p class="login-btn">
-                    <a href="./Login/login.html">
+                    <a href="./Login/login.html" class="login-btn">
                         Login
                     </a>
-                </p>
-            </div>
             <!-- Sell Button -->
-            <div class="sell-btn-div">
-                <img src="./assets/icons/sell-btn-border.svg" alt="Sell Button" class="sell-btn">
-                <img src="./assets/icons/sell-btn-plus-icon.svg" alt="Plus icon" class="plus-icon">
-                <p class="sell-txt">SELL</p>
-            </div>
+                <div class="sell-btn-div">
+                    <img src="./assets/icons/sell-btn-plus-icon.svg" alt="Plus icon" class="plus-icon">
+                    <p class="sell-txt">SELL</p>
+                </div>
+        </div>
+        <div class="top-btn-div">
+            <a href="#top" class="goto-top-btn">
+                <img src="./assets/icons/arrow-icon-dropdown.svg" alt="Arrow" class="top-btn-arrow">
+                <h5>Back to top</h5>    
+            </a>
         </div>
     </div>
         <!-- Category Section -->
@@ -157,7 +159,7 @@
         </div>
         
         <!-- Main Ad Section -->
-        <div class="ad-banner">
+        <div class="ad-banner" id="top">
             <img src="./assets/icons/top-banner.jpg" alt="" class="ad-banner-img">
         </div>
 

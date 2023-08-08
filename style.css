@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Roboto,Helvetica,sans-serif;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -17,11 +18,42 @@
     cursor: pointer;
 }
 
+.top-btn-div {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    position: absolute;
+    top: 130%;
+}
+
+.goto-top-btn {
+    display: flex;
+
+    width: fit-content;
+
+    gap: 7px;
+
+    padding: 10px 20px;
+
+    border: 1px solid #002f34;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #002f34;
+}
+
+.top-btn-arrow {
+    width: 17px;
+    transform: rotate(180deg);
+}
+
 /* Nav Bar Styling */
 
 .navbar {
     background-color: #f7f8f8;
-    padding: 11px 30px;
+    padding: 11px 0 11px 30px;
 
     position: sticky;
     top: 0;
@@ -274,36 +306,37 @@
 }
 
 .login-btn {
+    text-decoration: none;
+    
+    color: #002f34;
+
     font-size: 14.5px;
     font-weight: bold;
 
     border-bottom: 2px solid #002f34;
-
-}
-
-.login-btn > a {
-    text-decoration: none;
-    
-    color: #002f34;
 }
 
 .sell-btn-div {
-    position: relative;
+    width: 105px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+
+    background-image: url(./assets/icons/sell-btn-border.svg);
+    background-repeat: no-repeat;
 
     cursor: pointer;
 }
 
 .plus-icon {
-    position: absolute;
-    top: 15px;
-    left: 25px;
+
 }
 
 .sell-txt {
-    position: absolute;
-    top: 15px;
-    left: 45px;
-
     color: #002f34;
 
     font-size: 13px;
@@ -623,6 +656,17 @@
     font-size: 13px;
 }
 
+@media (max-width: 1075px) {
+    .sell-btn-div {
+        width: 100%;
+        background-position: center;
+
+        position: fixed;
+        bottom: 20px;
+        transform: scale(.8);
+    }
+}
+
 @media (max-width: 950px) {
     .all-cat-container {
         flex-wrap: nowrap;
@@ -642,14 +686,15 @@
     }
 
     .login-btn {
-        display: none;
-    }
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px 0;
+        text-align: center;
 
-    .sell-btn-div {
-        position: fixed;
-        bottom: 20px;
-        left: 40%;
-        transform: scale(.8);
+        text-decoration: none !important;
+        background-color: #002f34;
+        color: white;
+        border-radius: 3px;
     }
 
     .nav-child-2 {
@@ -697,6 +742,13 @@
         min-width: 30px;
         width: 5%;
     }
+
+    .top-btn-div {
+        top: 95%;
+
+        transform: scale(.8);
+    }
+
 
     .category-container {
         display: none;
